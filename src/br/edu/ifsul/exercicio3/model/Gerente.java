@@ -1,6 +1,6 @@
 package br.edu.ifsul.exercicio3.model;
 
-public  abstract class Gerente extends Funcionario {
+public  abstract class Gerente extends Funcionario implements Investidor {
     public Gerente(int id, String nome, double salario) {
         super(id, nome, salario);
     }
