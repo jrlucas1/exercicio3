@@ -1,6 +1,9 @@
 package br.edu.ifsul.exercicio3.model;
 
 public class GerenteDesv extends Gerente {
+    private int quantidade;
+    private String ticker;
+
     @Override
     public double getBonus() {
         double salarioBonus;
@@ -9,22 +12,22 @@ public class GerenteDesv extends Gerente {
     }
     @Override
     public String getTicker() {
-        return null;
+        return ticker;
     }
 
     @Override
-    public String setTicker(String ticker) {
-        return null;
+    public void setTicker(String ticker) {
+        this.ticker = ticker;
     }
 
     @Override
-    public int setQuantidade(int quantidade) {
-        return 0;
+    public void setQuantidade(int quantidade) {
+        this.quantidade = quantidade;
     }
 
     @Override
     public int getQuantidade() {
-        return 0;
+        return quantidade;
     }
     public GerenteDesv(int id, String nome, double salario) {
         super(id, nome, salario);
